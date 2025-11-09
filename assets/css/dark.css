@@ -1,0 +1,37 @@
+:root {
+  --bg: #0d0d0f;
+  --card: #151518;
+  --text: #e6e6e9;
+  --accent: #4d7cff;
+}
+
+body {
+  margin: 0;
+  font-family: system-ui, sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.card {
+  background: var(--card);
+  border-radius: 20px;
+  padding: 40px;
+  max-width: 500px;
+  width: 100%;
+  text-align: center;
+  box-shadow: 0 0 40px rgba(0,0,0,0.4);
+  border: 1px solid #232327;
+}
+
+h1 {
+  color: var(--accent);
+  margin-bottom: 15px;
+}
+
+p {
+  opacity: 0.8;
+}
