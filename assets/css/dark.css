@@ -1,3 +1,17 @@
+:root {
+  --bg: #0d0d0f;
+  --card: #151518;
+  --text: #e6e6e9;
+  --accent: #4d7cff;
+}
+
+body {
+  margin: 0;
+  font-family: system-ui, sans-serif;
+  background: var(--bg);
+  color: var(--text);
+}
+
 /* Top Navigation */
 .top-nav {
   background: #111;
@@ -39,4 +53,42 @@
 
 .nav-links a:hover {
   color: var(--accent);
+}
+
+/* Main content centering */
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: calc(100vh - 60px);
+  padding: 20px;
+}
+
+.card {
+  background: var(--card);
+  border-radius: 20px;
+  padding: 40px;
+  max-width: 500px;
+  width: 100%;
+  text-align: center;
+  box-shadow: 0 0 40px rgba(0, 0, 0, 0.4);
+  border: 1px solid #232327;
+  animation: fadeIn 0.6s ease;
+}
+
+h1 {
+  margin: 0 0 10px;
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--accent);
+}
+
+p {
+  opacity: 0.8;
+  margin-bottom: 25px;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
 }
