@@ -1,0 +1,5 @@
+title: Me - Kervian
+description: My site
+url: "https://me.kervian.com"
+baseurl: ""   # leave empty for subdomains
+theme: minima
